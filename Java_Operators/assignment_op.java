@@ -11,7 +11,7 @@ public class assignment_op {
         int b = a; // Simple assignment
         b += 5; // Add and assign
         b -= 2; // Subtract and assign
-        b *= 3; // Multiply and assign
+        b *= 3; // Multiply and assign7
         b /= 2; // Divide and assign
         b %= 4; // Modulus and assign
 
