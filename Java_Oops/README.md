@@ -34,3 +34,29 @@ In the above code, we have defined two constructors for the `Student` class:
 - A parameterized constructor that takes `name` and `age` as parameters to initialize the `Student` object.
 - A non-parameterized constructor that initializes the `Student` object with default values and prints a message indicating that the default constructor was called.
 This allows us to create `Student` objects either with specific values or with default values, demonstrating constructor overloading.
+
+## DECONSTRUCTOR
+Java does not have a concept of destructors like some other programming languages (e.g., C++). 
+In Java, memory management is handled by the garbage collector, which automatically deallocates memory for objects that are no longer reachable or referenced in the program.
+However, you can define a method that can be called to perform cleanup operations before an object is no longer needed, but this is not a destructor in the traditional sense.
+In Java, you can use the `finalize()` method to perform cleanup operations before an object is garbage collected, but it is not recommended to rely on it as it is deprecated in later versions of Java.
+Instead, you should use try-with-resources or explicit resource management to ensure that resources are released properly.
+In the above code, we have not defined a destructor because Java does not support destructors in the same way as languages like C++. 
+Instead, Java relies on garbage collection to automatically manage memory and clean up objects that are no longer in use.
+If you need to perform cleanup operations, you can define a method to do so, but it is not a destructor in the traditional sense.
+In the above code, we have not defined a destructor because Java does not support destructors in the same way as languages like C++. 
+Instead, Java relies on garbage collection to automatically manage memory and clean up objects that are no longer in use.
+If you need to perform cleanup operations, you can define a method to do so, but it is not a destructor in the traditional sense.
+In the above code, we have not defined a destructor because Java does not support destructors in the same way as languages like C++. 
+
+## INHERITANCE
+Inheritance is one of the four fundamental Object-Oriented Programming (OOP) concepts.
+It allows a new class (subclass or derived class) to inherit properties and behaviors (attributes and methods) from an existing class (superclass or base class).
+This promotes code reusability and establishes a hierarchical relationship between classes. 
+In the above code, we have defined a `Pen` class that serves as the base class, and a `FountainPen` class that extends the `Pen` class.
+The `FountainPen` class inherits the attributes and methods of the `Pen` class, allowing it to use the `color` and `tipSize` attributes and the `write()` method
+defined in the `Pen` class.
+The `FountainPen` class can also have its own additional attributes and methods, such as `inkType` and `refill()`, which are specific to fountain pens.
+This demonstrates how inheritance allows us to create specialized classes that build upon existing classes, promoting code reuse and organization.
+In the above code, we have defined a `Pen` class that serves as the base class, and a `FountainPen` class that extends the `Pen` class.
+
