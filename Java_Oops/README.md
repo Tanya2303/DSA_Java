@@ -60,3 +60,17 @@ The `FountainPen` class can also have its own additional attributes and methods,
 This demonstrates how inheritance allows us to create specialized classes that build upon existing classes, promoting code reuse and organization.
 In the above code, we have defined a `Pen` class that serves as the base class, and a `FountainPen` class that extends the `Pen` class.
 
+## TYPE OF INHERITANCE
+There are several types of inheritance in Java:
+1. **Single Inheritance**: A class inherits from one superclass.
+this contains single base class and one derived class.
+2. **Multiple Inheritance**: A class can inherit from multiple classes (not directly supported in Java, but can be achieved using interfaces).
+3. **Multilevel Inheritance**: A class inherits from another class, which in turn inherits from another class, forming a chain of inheritance.
+4. **Hierarchical Inheritance**: Multiple classes inherit from a single superclass.
+5. **Hybrid Inheritance**: A combination of two or more types of inheritance (not directly supported in Java, but can be achieved using interfaces).
+
+## POLYMORPHISM
+Polymorphism is one of the four fundamental Object-Oriented Programming (OOP) concepts.
+It allows objects of different classes to be treated as objects of a common superclass.
+Polymorphism enables a single interface to represent different underlying forms (data types).
+In Java, polymorphism can be achieved through method overriding and method overloading.
