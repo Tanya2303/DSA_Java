@@ -1,61 +1,67 @@
 package Java_Oops;
 
 public class Inheritance {
-    public static void main(String[] args) {
-        fish f1 = new fish();
-        f1.color = "Gold";
-        f1.fins = 2;
-        System.out.println("Fish color: " + f1.color);
-        System.out.println("Fish fins: " + f1.fins);
-        f1.eat();
-        f1.sleep();
-        f1.swim();
+     public static void main(String[] args) {
+
+        // Single Inheritance
+        Animal a = new Animal();
+        a.eat();
         System.out.println();
-        dogs d1 = new dogs();
-        
-        d1.color = "Brown";
-        d1.legs = 4;
-        d1.breed = "Labrador";
-        System.out.println("Dog color: " + d1.color);
-        System.out.println("Dog legs: " + d1.legs);
-        System.out.println("Dog breed: " + d1.breed);
-        d1.eat();
-        d1.sleep();
+
+        // Multilevel Inheritance
+        Dog dog = new Dog();
+        dog.eat(); // Animal
+        dog.walk(); // Mammal
+        dog.bark(); // Dog
+        System.out.println();
+
+        // Hierarchical Inheritance
+        Cat cat = new Cat();
+        cat.eat(); // Animal
+        cat.walk(); // Mammal
+        cat.meow(); // Cat
+        System.out.println();
+
+        // Multiple + Hybrid Inheritance via interfaces
+        Fish fish = new Fish();
+        fish.eat(); // Animal
+        fish.finsCount(); // Fish
+        fish.owner(); // Pet interface
+        fish.swim(); // Swimmer interface
     }
     
 }
 
+// SINGLE INHERITANCE: One class inherits from one parent
 class Animal {
-    String color;
-
-    void eat() {
-        System.out.println("Eating...");
-    }
-
-    void sleep() {
-        System.out.println("Sleeping...");
-    }
+    void eat() { System.out.println("Animal is eating."); }
 }
 
-class mammal extends Animal {
-    int legs;
-
-    void walk() {
-        System.out.println("Walking...");
-    }
+// MULTILEVEL INHERITANCE: Chain of inheritance
+class Mammal extends Animal {
+    void walk() { System.out.println("Mammal is walking."); }
 }
-class dogs extends mammal {
-    String breed;
-
-    void bark() {
-        System.out.println("Barking...");
-    }
+class Dog extends Mammal {
+    void bark() { System.out.println("Dog is barking."); }
 }
 
-class fish extends Animal {
-    int fins;
+// HIERARCHICAL INHERITANCE: Multiple classes inherit from one parent
+class Cat extends Mammal {
+    void meow() { System.out.println("Cat is meowing."); }
+}
 
-    void swim() {
-        System.out.println("Swimming...");
-    }
+// MULTIPLE INHERITANCE (Via INTERFACES)
+interface Pet {
+    void owner();
+}
+interface Swimmer {
+    void swim();
+}
+
+// HYBRID INHERITANCE: Combination (class & interface)
+class Fish extends Animal implements Pet, Swimmer { // Hybrid
+    void finsCount() { System.out.println("Fish has fins."); }
+
+    public void owner() { System.out.println("Fish has an owner."); }
+    public void swim() { System.out.println("Fish is swimming."); }
 }
