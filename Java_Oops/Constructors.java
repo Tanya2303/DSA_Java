@@ -2,23 +2,28 @@ package Java_Oops;
 
 public class Constructors {
     public static void main(String[] args) {
-        Student student1 = new Student("Alice", 21);
-        System.out.println(student1.name + " is " + student1.age + " years old.");
+        Stu s1 = new Stu(); // Non-parameterized constructor
+        Stu s2 = new Stu("Alice", 22); // Parameterized constructor
+        System.out.println("Student 1: Name = " + s1.name + ", Age = " + s1.age);
+        System.out.println("Student 2: Name = " + s2.name + ", Age = " + s2.age);   
+        s1.name = "John"; // Setting name for s1
+        s1.age = 20; // Setting age for s1
+        Stu s3 = new Stu(s1.name, s1.age); // Using s1's data to create a new Student
+        System.out.println("Student 3: Name = " + s3.name + ", Age = " + s3.age);
     }
 }
 
-class Student{
+class Stu{
     String name;
     int age;
 
     // Constructor
-    public Student(String name, int age) {
+    public Stu(String name, int age) { // Parameterized constructor
         this.name = name;
         this.age = age;
     }
-
-    // Method to display student details
-    public void display() {
-        System.out.println("Name: " + name + ", Age: " + age);
+    // Non-parameterized constructor
+    public Stu() {
+        System.out.println("Default constructor called");
     }
 }

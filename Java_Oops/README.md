@@ -20,3 +20,17 @@ In the above code, we have defined a constructor for the Pen class that takes tw
 - `color`: The color of the pen.
 - `tipSize`: The size of the pen's tip.
 This constructor initializes the Pen object with the specified color and tip size when it is created.
+
+## TYPES OF CONSTRUCTORS
+There are three types of constructors in Java:
+1. **Non-parameterized Constructor**: This constructor does not take any parameters and initializes the object with default values.
+2. **Parameterized Constructor**: This constructor takes parameters to initialize the object with specific values.
+3. **Copy Constructor**: This constructor creates a new object as a copy of an existing object, copying its attributes to the new object.
+
+**CONSTRUCTOR OVERLOADING**
+Constructor overloading is a feature in Java that allows a class to have more than one constructor with different parameter lists.
+This allows you to create objects in different ways, depending on the parameters passed to the constructor.
+In the above code, we have defined two constructors for the `Student` class:
+- A parameterized constructor that takes `name` and `age` as parameters to initialize the `Student` object.
+- A non-parameterized constructor that initializes the `Student` object with default values and prints a message indicating that the default constructor was called.
+This allows us to create `Student` objects either with specific values or with default values, demonstrating constructor overloading.
