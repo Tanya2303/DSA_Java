@@ -74,3 +74,39 @@ Polymorphism is one of the four fundamental Object-Oriented Programming (OOP) co
 It allows objects of different classes to be treated as objects of a common superclass.
 Polymorphism enables a single interface to represent different underlying forms (data types).
 In Java, polymorphism can be achieved through method overriding and method overloading.
+
+Compiler-time polymorphism (method overloading) occurs when multiple methods have the same name but different parameter lists, allowing the compiler to determine which method to call based on the arguments passed.
+
+Runtime polymorphism (method overriding) occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+This allows the program to determine at runtime which method to execute based on the actual object type, rather than the reference type.
+
+## ABSTRACTION 
+Abstraction is one of the four fundamental Object-Oriented Programming (OOP) concepts.
+It is the process of hiding the complex implementation details and showing only the essential features of an object.
+Abstraction allows you to focus on what an object does rather than how it does it, simplifying the interaction with objects.
+In Java, abstraction can be achieved using abstract classes and interfaces.
+An abstract class is a class that cannot be instantiated and may contain abstract methods (methods without a body) as well as concrete methods (methods with a body).
+An interface is a contract that defines a set of methods that a class must implement, allowing for multiple classes to share a common set of behaviors without being tied to a specific class hierarchy.
+
+## package in java
+1. What is a Package?
+A **package** in Java is a namespace that groups related classes, interfaces, and sub-packages together.
+**Key Points:**
+- Organizes classes and **avoids naming conflicts**.
+- Controls access with **default** and **protected** access modifiers.
+- Improves **readability**, **maintainability**, and **reusability**.
+- Helps keep large applications **modular**.
+2. Types of Packages
+
+| Type             | Description                                          | Examples                       |
+| ---------------- | ---------------------------------------------------- | ------------------------------ |
+| **Built-in**     | Predefined Java packages provided by the JDK.        | `java.lang`, `java.util`, `java.io` |
+| **User-defined** | Created by developers to group related classes.      | `com.mycompany.project`        |
+
+---
+Benefits of Packages
+✅ Organizes code into logical units  
+✅ Prevents naming conflicts  
+✅ Improves maintainability and scalability  
+✅ Controls access to classes  
+✅ Encourages code reuse  
