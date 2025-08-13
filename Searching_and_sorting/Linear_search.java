@@ -1,4 +1,4 @@
-package Searching_algo;
+package Searching_and_sorting;
 import java.util.*;
 public class Linear_search {
     public static int linear_search (int num[],int key){

@@ -1,4 +1,4 @@
-package Searching_algo;
+package Searching_and_sorting;
 import java.util.*;
 public class Binary_search {
     public static int binary_search(int num[],int key){
