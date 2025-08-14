@@ -1,0 +1,22 @@
+package Backtracking;
+
+public class Find_subset {
+    
+    public static void findSubsets(String str, String ans,  int index) {
+        // Base case: if index reaches the length of the string, print the answer
+        if (index == str.length()) {
+            System.out.println(ans);
+            return;
+        }
+        // Include the current character in the answer
+        findSubsets(str, ans + str.charAt(index), index + 1);
+        // Exclude the current character from the answer
+        findSubsets(str, ans, index + 1);
+    }
+    public static void main(String[] args) {
+        String str = "abc";
+        System.out.println("Subsets of the string \"" + str + "\":");
+        findSubsets(str, "", 0);
+    }
+    
+}
