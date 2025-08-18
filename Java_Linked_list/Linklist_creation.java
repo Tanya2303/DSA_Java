@@ -46,6 +46,7 @@ class Linklist_creation{
             System.out.print(temp.data + "->");
             temp = temp.next;
         }
+        System.out.println("null");
     }
     public void addMid(int data, int index){
         Node newNode = new Node(data);
