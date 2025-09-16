@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class prefix_subarray_sum {
+public class i_prefix_subarray_sum {
     public static void maxSubarrays(int num[]) {
         int curr_sum = 0; // Current subarray sum
         int max_sum = Integer.MIN_VALUE; // Maximum subarray sum

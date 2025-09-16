@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Array_2nd_largest {
+public class d_2nd_largest {
     public static int secondlargest(int num[]){
         int lar = num[0];
         int secondlar = -1;

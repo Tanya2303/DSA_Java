@@ -1,7 +1,7 @@
 package Java_Arrays;
 import java.util.Scanner;
 
-public class Arrays_basics {
+public class a_basics {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int marks[] = new int[50]; // Declare an array of integers with size 50

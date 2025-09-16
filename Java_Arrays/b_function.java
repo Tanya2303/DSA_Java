@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Arrays_function {
+public class b_function {
         public static void update(int marks[]){
         for(int i=0;i<marks.length;i++){
             marks[i] = marks[i] + 50; // Increment each element by 10

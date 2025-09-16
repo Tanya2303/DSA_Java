@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Array_pairs {
+public class f_pairs {
     public static void pairs(int num[]){
         int totalpair = 0;
         for(int i = 0; i<num.length; i++){

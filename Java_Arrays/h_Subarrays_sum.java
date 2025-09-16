@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Subarrays_sum {
+public class h_Subarrays_sum {
     public static void maxSubarrays(int num[]){
         int curr_sum = 0;
         int max_sum = Integer.MIN_VALUE;

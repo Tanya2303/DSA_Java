@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Array_reverse { 
+public class e_reverse { 
     public static void reverse(int arr[]){
         int first = 0;
         int last = arr.length-1;

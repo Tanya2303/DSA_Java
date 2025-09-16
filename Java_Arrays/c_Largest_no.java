@@ -1,7 +1,7 @@
 package Java_Arrays;
 
 
-public class Array_Largest_no {
+public class c_Largest_no {
     public static int getlargest(int num[]){
         int largest = Integer.MIN_VALUE;
         int smallest = Integer.MAX_VALUE;

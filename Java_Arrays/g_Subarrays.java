@@ -1,6 +1,6 @@
 package Java_Arrays;
 
-public class Subarrays {
+public class g_Subarrays {
     public static void Subarrays(int num[]){
         int total_sa = 0;
         for(int i=0; i<num.length; i++){
