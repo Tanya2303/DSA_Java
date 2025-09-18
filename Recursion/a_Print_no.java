@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class Print_no {
+public class a_Print_no {
 
     public static void printDec(int n) {
         if (n == 1) {
