@@ -11,4 +11,4 @@ public class basics {
 // 3. XOR (^): The XOR operator takes two bits and performs a logical exclusive OR operation. The result is 1 if the bits are different; otherwise, it is 0.
 // 4. NOT (~): The NOT operator is a unary operator that flips the bits of its operand. It changes 1s to 0s and 0s to 1s.
 // 5. Left Shift (<<): The left shift operator shifts the bits of its operand to the left by a specified number of positions. It fills the rightmost bits with 0s.
-//  
+//  6. Right Shift (>>): The right shift operator shifts the bits of its operand to the right by a specified number of positions. It fills the leftmost bits with the sign bit (0 for positive numbers and 1 for negative numbers).
