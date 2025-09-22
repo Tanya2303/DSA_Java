@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class Print_power_optimized {
+public class i_Print_power_optimized {
     
     public static int power(int x, int n) {
         if (n == 0) {
@@ -24,5 +24,4 @@ public class Print_power_optimized {
         System.out.println(x + " raised to the power of " + n + " is: " + result);
         sc.close();
     }
-    
 }

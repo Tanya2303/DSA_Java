@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class Print_power {
+public class h_Print_power {
     
     public static int power(int x, int n) {
         if (n == 0) {

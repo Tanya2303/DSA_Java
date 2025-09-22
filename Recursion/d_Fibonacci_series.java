@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class Fibonacci_series {
+public class d_Fibonacci_series {
     public static int fibonacci(int n) {
         if (n == 1 || n == 0) {
             return n;

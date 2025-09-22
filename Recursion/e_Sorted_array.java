@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Sorted_array {
+public class e_Sorted_array {
 
     public static boolean isSorted(int[] arr, int index) {
         if (index == arr.length - 1) {

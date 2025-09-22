@@ -1,6 +1,6 @@
 package Recursion;
 
-public class First_occurance {
+public class f_First_occurance {
     public static int firstOccurrence(int[] arr, int target, int index) {
         if (index == arr.length) {
             return -1; // Base case: target not found

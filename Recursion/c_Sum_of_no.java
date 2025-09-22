@@ -1,6 +1,6 @@
 package Recursion;
 import java.util.Scanner;
-public class Sum_of_no {
+public class c_Sum_of_no {
 
     public static int sum(int n) {
         if (n == 0) {
